@@ -1,0 +1,24 @@
+# Sumar sólo impares de los primeros 99 enteros:
+
+  # 1.1 Con bucle for:
+s <- 0
+for (i in 1:99) {
+  if (i%%2==!0) 
+  s <- s+i
+  }
+s
+
+  # 1.2 Con bucle while:
+s <- 0
+n <- 1 
+while (n <=99) {
+  if (n%%2==!0)
+  s = s+n
+  n = n+1
+}
+s
+
+  # 1.3 Sin bucles:
+i <- c(1:99)
+I <- i[i%%2==!0]
+sum(I)
